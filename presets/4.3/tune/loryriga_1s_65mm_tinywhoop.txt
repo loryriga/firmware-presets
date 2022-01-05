@@ -1,0 +1,132 @@
+#$ TITLE: Tinywhoop 1s 65mm
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: filters, tinywhoop, tune, pid, rpm, 1s
+#$ AUTHOR: LoryRiga
+#$ DESCRIPTION: Tune with filters for 1s 65mm tinywhoops. 
+#$ DESCRIPTION:
+#$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: If motors get hot or make grind noise then reduce the dTerm expo, lower the gyro lowpass cutoff or choose a more conservative filter startegy.
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: Preset for 12 poles motors. 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: Always check motors temperature when applying new filters. 
+#$ DESCRIPTION: If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoff.
+
+
+#APPLYING DEAFULT FILTERS AND TUNE
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+#DEAFULTS END. APPLYING CUSTOM FILTERS AND TUNE
+
+# -- Only a static PT1 gyro lowpass --
+set gyro_lpf1_dyn_min_hz = o
+set gyro_lpf1_dyn_max_hz = 0
+set gyro_lpf1_static_hz = 350
+set gyro_lpf2_static_hz = 0
+
+# -- Gyro Sliders OFF --
+set simplified_gyro_filter_multiplier = OFF
+
+# -- Gyro Static Notches (default)--
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 125
+set dyn_notch_max_hz = 600
+
+# -- RPM filtering --
+set dshot_bidir = ON
+set rpm_filter_crossfading_range = 50
+
+# -- Motor Poles --
+set motor_poles_count = 12
+
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 80
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 0
+set dterm_lpf1_type = PT2
+
+# -- Dterm sliders OFF --
+set simplified_dterm_filter_multiplier = OFF
+
+# -- Yaw lowpass (default) --
+
+# -- PID Sliders (RP)--
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 150
+set simplified_i_gain = 75
+set simplified_d_gain = 135
+set simplified_pi_gain = 100
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 100
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+simplified_tuning apply
+
+# -- Yaw PID values --
+set p_yaw = 72
+set i_yaw = 90
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 170
+
+# -- iTerm relax --
+set iterm_relax_cutoff = 10
+
+# -- Feedforward  --
+set feedforward_boost = 40
+
+# -- TPA --
+set tpa_breakpoint = 1550
+
+# -- PIDsum limits--
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+# -- Dshot idle --
+set dshot_idle_value = 900
+
+# -- Vbat sag compensation --
+set vbat_sag_compensation = 100
+
+#OPTIONS
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic Idle
+set dyn_idle_min_rpm = 70
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48/96kHz PWM (thrust_linear = 25)
+# -- Thrust linear for higher PWM--
+set thrust_linear = 25
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Feedforward for 200-250Hz RC Links
+# -- Feedforward  --
+set feedforward_avering = 2_POINTS
+set feedforward_interpolation = 30
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F4 FC Speed Settings (WARNING: Enables DSHOT300)
+# F4 FC Speed Settings
+# -- Motor protocol -- 
+set motor_protocol = DSHOT300
+# -- Pidloop speed --
+set pid_process_denom = 2
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F7 FC Speed Settings (WARNING: Enables DSHOT600)
+# F7 FC Speed Settings
+# -- Motor protocol -- 
+set motor_protocol = DSHOT600
+# -- Pidloop speed --
+set pid_process_denom = 1
+#$ OPTION END

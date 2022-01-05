@@ -1,0 +1,21 @@
+#$ TITLE: Freestyle Rates by LoryRiga
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: freestyle, HD, cinematic, rates
+#$ AUTHOR: LoryRiga
+#$ DESCRIPTION: Freestyle rates by LoryRiga
+#$ DESCRIPTION: TPA values are not included
+#$ DESCRIPTION: Throttle limit and curve are not included
+
+
+#APPLYING DEAFULT RATES
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+#DEAFULTS END. APPLYING CUSTOM RATES
+
+set roll_expo = 45
+set pitch_expo = 45
+set yaw_expo = 45
+set roll_srate = 92
+set pitch_srate = 92
+set yaw_srate = 82

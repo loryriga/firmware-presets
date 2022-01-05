@@ -121,10 +121,12 @@
       "BMSThomas",
       "ctzsnooze",
       "Directory",
+      "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
+      "LoryRiga",
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
       "NemesisXB",
@@ -134,6 +136,7 @@
     "keywords": [
       "\\\\GAS",
       "150hz",
+      "1s",
       "250hz",
       "3 inch",
       "3\"",
@@ -158,6 +161,7 @@
       "basic",
       "betaflight",
       "blackbox",
+      "BMI270",
       "BMSThomas",
       "camera",
       "camera_control",
@@ -166,6 +170,7 @@
       "Cgo",
       "Chief",
       "cinematic",
+      "cinewhoop",
       "clean",
       "clear",
       "control",
@@ -193,6 +198,9 @@
       "freesytle",
       "frsky",
       "GPS",
+      "gyro",
+      "gyros",
+      "gyroscope",
       "HD",
       "HD_freestyle",
       "HDzero",
@@ -249,6 +257,7 @@
       "SA 2.0 lite",
       "SA 2.1",
       "sbus",
+      "settings",
       "shames",
       "shark bite",
       "smooth",
@@ -269,6 +278,7 @@
       "tiny",
       "tiny tank",
       "tinyTrainer",
+      "tinywhoop",
       "tracer",
       "trainer",
       "tramp",
@@ -292,6 +302,51 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/filters/BMI270.txt",
+      "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
+      "options": [
+        {
+          "name": "BMI270 Clean build without RPM filters",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT300",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT600",
+          "checked": false
+        }
+      ],
+      "title": "4.3 Filter settings for BMI270 gyroscope",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "description": [
+        "These settings are for BMI270 gyroscope only.",
+        "With only these settings, the BMI270 will give a nice output and control performance.",
+        "Please check the available options in this preset."
+      ],
+      "discussion": ": https://github.com/betaflight/firmware-presets/pull/141/",
+      "warning": "This preset changes PID loop rate to 3.2k. This is necessary for some BMI270 gyro boards. Please, don't change it back to anything higher than 4k unless you know what you are doing.",
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
       "hash": "505a3cf9aff8fc6b861770d3bcafcb61431e2865f3fa10170f8c5cc044b5fea1",
@@ -688,6 +743,96 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/51",
       "include_warning": [
         "misc/warnings/en/rpm_filters.txt"
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_normal.txt",
+      "hash": "b0f5362aa2e46bc2d66374c82e6b12dcd36ffacdebdec48a2c2c2c8ba3ffcd7d",
+      "options": [],
+      "title": "Normal Filters by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filters",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for normal noise builds.",
+        "",
+        "WARNING: Preset for 12 poles motors.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: Always check motors temperature when applying new filters.",
+        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoffs."
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_tinywhoop.txt",
+      "hash": "fbe8164965ee2c2e085961dbb6c5a0c769691d3724de78d9cb49373500780c4b",
+      "options": [],
+      "title": "Tinywhoop Filters by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filters",
+        "tinywhoop",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for 1s 65mm tynywhoops.",
+        "",
+        "WARNING: Preset for 12 poles motors.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: Always check motors temperature when applying new filters.",
+        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoff."
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_very_clean.txt",
+      "hash": "7324ca255a8fed64ffd52dda1dfb2d71285ce0c0d6a064f351e2bebabd22dc9b",
+      "options": [],
+      "title": "No Gyro Lowpass Filters VERY CLEAN",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filters",
+        "clean",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for VERY CLEAN bulds.",
+        "",
+        "Credits to Chris Rosser for this filters setup.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
+        "Ensure that your props are in mint condition.",
+        "If motors get hot or make grind noise then choose a less aggressive filter startegy."
       ],
       "include": [
         "presets/4.3/filters/defaults.txt"
@@ -1278,6 +1423,59 @@
         "Optional checkbox provides almost identical rates, but with the type = BETAFLIGHT."
       ],
       "discussion": "https://github.com/betaflight/firmware-presets/pull/100/",
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rates/loryriga_cinematic.txt",
+      "hash": "4f1524444ed0b61fd79c748439dcfbb23cdda6420465e77b22ab5c947f5bc806",
+      "options": [],
+      "title": "Cinematic Rates by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "freestyle",
+        "HD",
+        "cinematic",
+        "rates",
+        "smooth"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Cinematic rates by LoryRiga",
+        "TPA values are not included",
+        "Throttle limit and curve are not included"
+      ],
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rates/loryriga_freestyle.txt",
+      "hash": "90a6716a3a22b5dc7dd869107e41e27d230af9177847c818ef388bb2863e69d0",
+      "options": [],
+      "title": "Freestyle Rates by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "freestyle",
+        "HD",
+        "cinematic",
+        "rates"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Freestyle rates by LoryRiga",
+        "TPA values are not included",
+        "Throttle limit and curve are not included"
+      ],
       "include": [
         "presets/4.3/rates/defaults.txt"
       ]
@@ -2282,6 +2480,361 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/41",
       "include_warning": [
         "misc/warnings/en/rpm_filters.txt"
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
+      "hash": "faa32b82106782ddef41923f48a624f3974dfe4db6de1b93853003f915d5c4ac",
+      "options": [
+        {
+          "name": "Dynamic Idle",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
+          "checked": false
+        }
+      ],
+      "title": "Tinywhoop 1s 65mm",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filters",
+        "tinywhoop",
+        "tune",
+        "pid",
+        "rpm",
+        "1s"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune with filters for 1s 65mm tinywhoops.",
+        "",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "If motors get hot or make grind noise then reduce the dTerm expo, lower the gyro lowpass cutoff or choose a more conservative filter startegy.",
+        "",
+        "WARNING: Preset for 12 poles motors.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: Always check motors temperature when applying new filters.",
+        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoff."
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop_no_filters.txt",
+      "hash": "3fe0512a5dda752b1a50482b6b8dac903776d06fe57b41428ac98dda7ec5fa3c",
+      "options": [
+        {
+          "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
+          "checked": false
+        }
+      ],
+      "title": "Tinywhoop 1s 65mm NO FILTER",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "tinywhoop",
+        "tune",
+        "pid",
+        "1s"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune for 1s 65mm tynywhoops.",
+        "",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "",
+        "WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!",
+        "",
+        "WARNING: Preset for 12 poles motors."
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
+      "hash": "09d982f3e90692acee87b417a970ebc06e0e540b472b649cc390eb7d3118a7b7",
+      "options": [
+        {
+          "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
+          "checked": false
+        },
+        {
+          "name": "14 Poles Motors",
+          "checked": false
+        },
+        {
+          "name": "With Naked HD Camera",
+          "checked": true
+        }
+      ],
+      "title": "Cinewhoop 2.5inch",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "cinewhoop",
+        "tune",
+        "pid"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune for 2.5\" cinewhoops.",
+        "",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "",
+        "WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!",
+        "",
+        "WARNING: Preset for 12 poles motors. If 14 poles motors are used please check the dedicated option."
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
+      "hash": "4a660df92c7dfedbe16471b9d20436e02f60c475db51c6c1931a96b9d53cba2f",
+      "options": [
+        {
+          "name": "Dynamic Idle",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
+          "checked": false
+        },
+        {
+          "name": "14 Poles Motors",
+          "checked": false
+        },
+        {
+          "name": "With Naked HD Camera",
+          "checked": true
+        }
+      ],
+      "title": "Cinewhoop 2.5inch VERY CLEAN",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filters",
+        "clean",
+        "cinewhoop",
+        "tune",
+        "pid",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune with filters for VERY CLEAN 2.5\" cinewhoops.",
+        "Credits to Cris Rosser for the filter startegy used in this tune.",
+        "",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
+        "Ensure that your props are in mint condition.",
+        "If motors get hot or make grind noise then choose a less aggressive filter startegy.",
+        "",
+        "WARNING: Preset for 12 poles motors. If 14 poles motors are used please check the dedicated option."
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt",
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_no_filters.txt",
+      "hash": "0060cc523f2cd2a91ebd3b2625f1ea91e252bab0d41aaf594a314990ba8ef808",
+      "options": [
+        {
+          "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
+          "checked": false
+        },
+        {
+          "name": "With HD Camera",
+          "checked": true
+        }
+      ],
+      "title": "Freestyle 5inch",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "freestyle",
+        "tune",
+        "pid"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune for 5\" freestyle bulds.",
+        "",
+        "PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds.",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "",
+        "WARNING: If Dynamic Idle is enabled then Dshot telemetry must work properly!"
+      ],
+      "include": [
+        "presets/4.3/tune/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
+      "hash": "e3e14da0122558bb684a649944f018b0f5109f580146f066905ecb43072f0d4d",
+      "options": [
+        {
+          "name": "Dynamic Idle",
+          "checked": false
+        },
+        {
+          "name": "48/96kHz PWM (thrust_linear = 25)",
+          "checked": false
+        },
+        {
+          "name": "Feedforward for 200-250Hz RC Links",
+          "checked": false
+        },
+        {
+          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
+          "checked": false
+        },
+        {
+          "name": "F7 FC Speed Settings",
+          "checked": false
+        },
+        {
+          "name": "With HD Camera",
+          "checked": true
+        }
+      ],
+      "title": "Freestyle 5inch VERY CLEAN",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filters",
+        "clean",
+        "freestyle",
+        "tune",
+        "pid",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Tune with filters for VERY CLEAN 5\" freestyle bulds.",
+        "Credits to Cris Rosser for the filter startegy used in this tune.",
+        "",
+        "PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds.",
+        "Raise the master slider to improve the performance if needed.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
+        "Ensure that your props are in mint condition.",
+        "If motors get hot or make grind noise then choose a less aggressive filter startegy."
       ],
       "include": [
         "presets/4.3/tune/defaults.txt",

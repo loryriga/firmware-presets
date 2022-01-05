@@ -1,0 +1,110 @@
+#$ TITLE: Freestyle 5inch
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: freestyle, tune, pid
+#$ AUTHOR: LoryRiga
+#$ DESCRIPTION: Tune for 5" freestyle bulds.
+#$ DESCRIPTION:
+#$ DESCRIPTION: PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds. 
+#$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: If Dynamic Idle is enabled then Dshot telemetry must work properly!
+
+
+#APPLYING DEAFULT TUNE
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#DEAFULTS END. APPLYING CUSTOM TUNE
+
+# -- PID Sliders (RP)--
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 140
+set simplified_i_gain = 75
+set simplified_d_gain = 100
+set simplified_pi_gain = 100
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+simplified_tuning apply
+
+# -- Yaw PID values --
+set p_yaw = 68
+set i_yaw = 84
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 135
+
+# -- iTerm relax --
+set iterm_relax_cutoff = 10
+
+# -- Feedforward  --
+set feedforward_boost = 40
+
+# -- TPA (default) --
+
+# -- PIDsum limits--
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+# -- Dshot idle --
+set dshot_idle_value = 700
+
+#OPTIONS
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic Idle (WARNING: Enables Bidirectional DSHOT)
+set dshot_bidir = ON
+set dyn_idle_min_rpm = 35
+set dyn_idle_p_gain = 35
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48/96kHz PWM (thrust_linear = 25)
+# -- Thrust linear --
+set thrust_linear = 25
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Feedforward for 200-250Hz RC Links
+# -- Feedforward  --
+set feedforward_avering = 2_POINTS
+set feedforward_interpolation = 30
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F4 FC Speed Settings (WARNING: Enables DSHOT300)
+# F4 FC Speed Settings
+# -- Motor protocol -- 
+set motor_protocol = DSHOT300
+# -- Pidloop speed --
+set pid_process_denom = 2
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F7 FC Speed Settings (WARNING: Enables DSHOT600)
+# F7 FC Speed Settings
+# -- Motor protocol -- 
+set motor_protocol = DSHOT600
+# -- Pidloop speed --
+set pid_process_denom = 1
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): With HD Camera
+
+# -- PID Sliders (RP)--
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 150
+set simplified_i_gain = 80
+set simplified_d_gain = 100
+set simplified_pi_gain = 95
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+simplified_tuning apply
+
+# -- Yaw PID values --
+set p_yaw = 72
+set i_yaw = 90
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 150
+
+#$OPTION END
