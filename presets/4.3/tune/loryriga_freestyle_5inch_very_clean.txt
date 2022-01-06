@@ -117,7 +117,7 @@ set motor_protocol = DSHOT300
 set pid_process_denom = 2
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): F7 FC Speed Settings
+#$ OPTION BEGIN (UNCHECKED): F7 FC Speed Settings (WARNING: Enables DSHOT600)
 # F7 FC Speed Settings
 # -- Motor protocol -- 
 set motor_protocol = DSHOT600

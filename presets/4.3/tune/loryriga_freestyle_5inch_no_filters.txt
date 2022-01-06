@@ -8,7 +8,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds. 
 #$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
-#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: If Dynamic Idle is enabled then Dshot telemetry must work properly!
 

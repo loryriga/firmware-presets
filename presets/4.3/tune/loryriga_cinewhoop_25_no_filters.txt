@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Tune for 2.5" cinewhoops.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
-#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!
 #$ DESCRIPTION:

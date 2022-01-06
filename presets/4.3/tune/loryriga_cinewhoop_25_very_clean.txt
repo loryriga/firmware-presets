@@ -5,10 +5,10 @@
 #$ KEYWORDS: filters, clean, cinewhoop, tune, pid, rpm
 #$ AUTHOR: LoryRiga
 #$ DESCRIPTION: Tune with filters for VERY CLEAN 2.5" cinewhoops.
-#$ DESCRIPTION: Credits to Cris Rosser for the filter startegy used in this tune.
+#$ DESCRIPTION: Credits to Chris Rosser for the filter startegy used in this tune.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
-#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION:

@@ -7,7 +7,7 @@
 #$ DESCRIPTION: Tune with filters for 1s 65mm tinywhoops. 
 #$ DESCRIPTION:
 #$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
-#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
 #$ DESCRIPTION: If motors get hot or make grind noise then reduce the dTerm expo, lower the gyro lowpass cutoff or choose a more conservative filter startegy.
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: Preset for 12 poles motors. 

@@ -2488,7 +2488,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "faa32b82106782ddef41923f48a624f3974dfe4db6de1b93853003f915d5c4ac",
+      "hash": "2fbab348f5bfd56c3db09cd02d675c32fd3937775ca90f869560d53c48620665",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2530,7 +2530,7 @@
         "Tune with filters for 1s 65mm tinywhoops.",
         "",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "If motors get hot or make grind noise then reduce the dTerm expo, lower the gyro lowpass cutoff or choose a more conservative filter startegy.",
         "",
         "WARNING: Preset for 12 poles motors.",
@@ -2547,7 +2547,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop_no_filters.txt",
-      "hash": "3fe0512a5dda752b1a50482b6b8dac903776d06fe57b41428ac98dda7ec5fa3c",
+      "hash": "0dc35b4fcc2ede3eaf822ee3efe6199a478f1ac451977d278969e3afb82ddb72",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2587,7 +2587,7 @@
         "Tune for 1s 65mm tynywhoops.",
         "",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "",
         "WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!",
         "",
@@ -2599,7 +2599,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
-      "hash": "09d982f3e90692acee87b417a970ebc06e0e540b472b649cc390eb7d3118a7b7",
+      "hash": "326c93688249eb5e51e4eedac57c229e1614ae7547a5902648a41235452318cf",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2646,7 +2646,7 @@
         "Tune for 2.5\" cinewhoops.",
         "",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "",
         "WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!",
         "",
@@ -2658,7 +2658,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "4a660df92c7dfedbe16471b9d20436e02f60c475db51c6c1931a96b9d53cba2f",
+      "hash": "32978ffc251e8533c406c9e50b24cf14025ef23c5b51eb6a674df74aae8abe07",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2706,10 +2706,10 @@
       "author": "LoryRiga",
       "description": [
         "Tune with filters for VERY CLEAN 2.5\" cinewhoops.",
-        "Credits to Cris Rosser for the filter startegy used in this tune.",
+        "Credits to Chris Rosser for the filter startegy used in this tune.",
         "",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "",
         "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
         "",
@@ -2726,7 +2726,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_no_filters.txt",
-      "hash": "0060cc523f2cd2a91ebd3b2625f1ea91e252bab0d41aaf594a314990ba8ef808",
+      "hash": "dfa9d18c254f509473c6bf8b9d2e0eb42bd5bb4edfdeef77fb08b413ef969188",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2770,7 +2770,7 @@
         "",
         "PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds.",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "",
         "WARNING: If Dynamic Idle is enabled then Dshot telemetry must work properly!"
       ],
@@ -2780,7 +2780,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "e3e14da0122558bb684a649944f018b0f5109f580146f066905ecb43072f0d4d",
+      "hash": "558a9e4e96aefdd3ef9447684d61f21d28774c8fe331727fdc9dd01ff58b03a7",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2799,7 +2799,7 @@
           "checked": false
         },
         {
-          "name": "F7 FC Speed Settings",
+          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
           "checked": false
         },
         {
