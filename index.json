@@ -2780,7 +2780,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "558a9e4e96aefdd3ef9447684d61f21d28774c8fe331727fdc9dd01ff58b03a7",
+      "hash": "d54d6d9107d00bddbbfc2e9e1ba0a86e9668a121d5d0788b5a2b8b80b99c1fb7",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2824,11 +2824,11 @@
       "author": "LoryRiga",
       "description": [
         "Tune with filters for VERY CLEAN 5\" freestyle bulds.",
-        "Credits to Cris Rosser for the filter startegy used in this tune.",
+        "Credits to Chris Rosser for the filter startegy used in this tune.",
         "",
         "PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds.",
         "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.",
+        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
         "",
         "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
         "",

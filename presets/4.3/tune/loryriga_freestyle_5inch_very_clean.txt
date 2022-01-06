@@ -5,11 +5,11 @@
 #$ KEYWORDS: filters, clean, freestyle, tune, pid, rpm
 #$ AUTHOR: LoryRiga
 #$ DESCRIPTION: Tune with filters for VERY CLEAN 5" freestyle bulds. 
-#$ DESCRIPTION: Credits to Cris Rosser for the filter startegy used in this tune.
+#$ DESCRIPTION: Credits to Chris Rosser for the filter startegy used in this tune.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: PIDs are based on freestyle quads with high power/weight ratio, hence they're a bit conservative for average builds. 
 #$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
-#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward up again with the dedicated slider.
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION:
