@@ -43,6 +43,9 @@ set iterm_relax_cutoff = 10
 # -- Feedforward  --
 set feedforward_boost = 40
 
+# -- Throttle boost --
+set throttle_boost = 10
+
 # -- TPA --
 set tpa_breakpoint = 1550
 
@@ -60,7 +63,7 @@ set vbat_sag_compensation = 100
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic Idle (WARNING: Enables Bidirectional DSHOT)
 set dshot_bidir = ON
-set dyn_idle_min_rpm = 70
+set dyn_idle_min_rpm = 90
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): 48/96kHz PWM (thrust_linear = 25)

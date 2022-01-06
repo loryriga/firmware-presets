@@ -2488,7 +2488,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "2fbab348f5bfd56c3db09cd02d675c32fd3937775ca90f869560d53c48620665",
+      "hash": "170e033da8efc5d7a07d0f7af80845762f808d829f3f7519db4184386bbd035a",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2547,7 +2547,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop_no_filters.txt",
-      "hash": "0dc35b4fcc2ede3eaf822ee3efe6199a478f1ac451977d278969e3afb82ddb72",
+      "hash": "78c4376d3df05a8c20c7c0497c1d4825bbc7e51754a7d970236c7c31034ed957",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2599,7 +2599,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
-      "hash": "326c93688249eb5e51e4eedac57c229e1614ae7547a5902648a41235452318cf",
+      "hash": "1c06fbaaa754df1a63ff3e5d51d3db9d3d0a840b8f5e2c7f58ba4746973e9412",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2658,7 +2658,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "32978ffc251e8533c406c9e50b24cf14025ef23c5b51eb6a674df74aae8abe07",
+      "hash": "144af9f3b9ba00444074969b7323f7585e85ba9783614ad0f32f49376da8d6c6",
       "options": [
         {
           "name": "Dynamic Idle",

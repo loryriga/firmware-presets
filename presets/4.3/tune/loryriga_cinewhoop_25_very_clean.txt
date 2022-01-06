@@ -86,6 +86,9 @@ set iterm_relax_cutoff = 5
 # -- Feedforward  --
 set feedforward_boost = 40
 
+# -- Throttle boost --
+set throttle_boost = 10
+
 # -- TPA --
 set tpa_breakpoint = 1550
 
@@ -99,7 +102,7 @@ set dshot_idle_value = 900
 #OPTIONS
 
 #$ OPTION BEGIN (UNCHECKED): Dynamic Idle
-set dyn_idle_min_rpm = 70
+set dyn_idle_min_rpm = 90
 #$ OPTION END
  
 #$ OPTION BEGIN (UNCHECKED): 48/96kHz PWM (thrust_linear = 25)
