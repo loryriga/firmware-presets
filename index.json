@@ -2488,7 +2488,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "718f8c7e41a00bb3f0bc5d26abc5ccf9a9cdb044cf9a1e83b426895ffffb9b27",
+      "hash": "1668436dca95c8ac603599709fb394e2e7f9cc19b758aae0888ce662225fb481",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2547,7 +2547,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop_no_filters.txt",
-      "hash": "53ac3de75a939366e4a871087c42bde7224aea0432963bd7b3b2633d74438253",
+      "hash": "b5a45a149057ba6b92595490b0b2ccdb15caa2af3348247c40f5c3310ad5947e",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2599,7 +2599,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
-      "hash": "a1ff29716a8be8fc0d6397402641f3fea7fe7f33d311874fee586ebf059ea34d",
+      "hash": "96cc3723340868b3c09c5ab336e79ee706c0ec20d62f3cbdc389998450bc1f64",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2658,7 +2658,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "03a00e5712ec0fe7123cec795630cd00ce4e1a815ee07e12f35ee74af2bdac51",
+      "hash": "9f725f3da717227af3319895a7d4a0f1221575d83f4d57230c6eb266541997f0",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2726,7 +2726,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_no_filters.txt",
-      "hash": "abba399332489a8dfebd513af4d0becf5d79a827d19482be197df7b4a4fb241c",
+      "hash": "840a5fbb04c44748555918e7981b634072ee70e34bbccded59219e15a81fa176",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -2780,7 +2780,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "3f03272640c63ea44b635ef69606448c0f028b6946d0b7e7a591d3ff6db35f1a",
+      "hash": "8918ce513135a46cac235ebd71a97dffa6178c89f174f84dd80bc4904a336b12",
       "options": [
         {
           "name": "Dynamic Idle",
