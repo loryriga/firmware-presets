@@ -30,7 +30,7 @@ set gyro_lpf1_dyn_max_hz = 0
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
 
-# -- Gyro Sliders OFF --
+# -- Gyro Slider OFF --
 set simplified_gyro_filter_multiplier = OFF
 
 # -- Gyro Static Notches (default)--
