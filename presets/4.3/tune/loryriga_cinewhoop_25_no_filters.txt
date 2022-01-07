@@ -1,0 +1,119 @@
+#$ TITLE: Cinewhoop 2.5inch
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: cinewhoop, tune, pid
+#$ AUTHOR: LoryRiga
+#$ DESCRIPTION: Tune for 2.5" cinewhoops.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Raise the master slider to improve the performance if needed. 
+#$ DESCRIPTION: Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING: Preset for 12 poles motors. If 14 poles motors are used please check the dedicated option. 
+
+
+#APPLYING DEAFULT TUNE
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#DEAFULTS END. APPLYING CUSTOM TUNE
+
+# -- PID Sliders (RP)--
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 160
+set simplified_i_gain = 75
+set simplified_d_gain = 120
+set simplified_pi_gain = 100
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+simplified_tuning apply
+
+# -- Yaw PID values --
+set p_yaw = 76
+set i_yaw = 101
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 170
+
+# -- iTerm relax --
+set iterm_relax_cutoff = 5
+
+# -- Feedforward  --
+set feedforward_boost = 40
+
+# -- Throttle boost --
+set throttle_boost = 10
+
+# -- TPA --
+set tpa_breakpoint = 1550
+
+# -- PIDsum limits--
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+
+# -- Dshot idle --
+set dshot_idle_value = 900
+
+#OPTIONS
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic Idle (WARNING: Enables Bidirectional DSHOT)
+set dshot_bidir = ON
+set dyn_idle_min_rpm = 90
+#$ OPTION END
+ 
+#$ OPTION BEGIN (UNCHECKED): 48/96kHz PWM (thrust_linear = 25)
+# -- Thrust linear --
+set thrust_linear = 25
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Feedforward for 200-250Hz RC Links
+# -- Feedforward  --
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 30
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F4 FC Speed Settings (WARNING: Enables DSHOT300)
+# F4 FC Speed Settings
+# -- Motor protocol -- 
+set motor_pwm_protocol = DSHOT300
+# -- Pidloop speed --
+set pid_process_denom = 2
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): F7 FC Speed Settings (WARNING: Enables DSHOT600)
+# F7 FC Speed Settings
+# -- Motor protocol -- 
+set motor_pwm_protocol = DSHOT600
+# -- Pidloop speed --
+set pid_process_denom = 1
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 14 Poles Motors
+# -- Motor Poles --
+set motor_poles_count = 14
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): With Naked HD Camera
+
+# -- PID Sliders (RP)--
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 170
+set simplified_i_gain = 75
+set simplified_d_gain = 125
+set simplified_pi_gain = 95
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 105
+set simplified_pitch_d_gain = 105		
+set simplified_pitch_pi_gain = 105
+simplified_tuning apply
+
+# -- Yaw PID values --
+set p_yaw = 80
+set i_yaw = 114
+set d_yaw = 0
+set d_min_yaw = 0
+set f_yaw = 190
+
+#$OPTION END
