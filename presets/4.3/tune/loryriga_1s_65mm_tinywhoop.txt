@@ -114,7 +114,7 @@ set thrust_linear = 25
 
 #$ OPTION BEGIN (UNCHECKED): Feedforward for 200-250Hz RC Links
 # -- Feedforward  --
-set feedforward_averaging = 2_POINTS
+set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 30
 #$ OPTION END
 
