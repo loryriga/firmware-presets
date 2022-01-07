@@ -13,9 +13,9 @@
 #$ INCLUDE: presets/4.3/rates/defaults.txt
 #DEAFULTS END. APPLYING CUSTOM RATES
 
-set roll_expo = 45
-set pitch_expo = 45
-set yaw_expo = 45
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 50
 set roll_srate = 92
 set pitch_srate = 92
 set yaw_srate = 82
