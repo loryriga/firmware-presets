@@ -23,7 +23,6 @@
 set simplified_gyro_filter_multiplier = 110
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
-simplified_tuning apply
 
 # -- Gyro Static Notches (default)--
 
