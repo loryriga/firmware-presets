@@ -121,10 +121,12 @@
       "BMSThomas",
       "ctzsnooze",
       "Directory",
+      "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
+      "LoryRiga",
       "Mark Spatz (UAV Tech)",
       "MinChan Kim",
       "NemesisXB",
@@ -158,6 +160,7 @@
       "basic",
       "betaflight",
       "blackbox",
+      "BMI270",
       "BMSThomas",
       "camera",
       "camera_control",
@@ -193,6 +196,9 @@
       "freesytle",
       "frsky",
       "GPS",
+      "gyro",
+      "gyros",
+      "gyroscope",
       "HD",
       "HD_freestyle",
       "HDzero",
@@ -249,6 +255,7 @@
       "SA 2.0 lite",
       "SA 2.1",
       "sbus",
+      "settings",
       "shames",
       "shark bite",
       "smooth",
@@ -292,6 +299,51 @@
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/4.3/filters/BMI270.txt",
+      "hash": "af69e3c94ef3dcdd2fca5906292a0dbcf4e4ac1cf74a35860d379cd9e5436c4f",
+      "options": [
+        {
+          "name": "BMI270 Clean build without RPM filters",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT300",
+          "checked": false
+        },
+        {
+          "name": "BMI270 Clean build with RPM filters DSHOT600",
+          "checked": false
+        }
+      ],
+      "title": "4.3 Filter settings for BMI270 gyroscope",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "BMI270",
+        "filter",
+        "filters",
+        "gyroscope",
+        "gyro",
+        "gyros",
+        "settings",
+        "RPM"
+      ],
+      "author": "DusKing1 (Hugo Chiang), Pitronic",
+      "description": [
+        "These settings are for BMI270 gyroscope only.",
+        "With only these settings, the BMI270 will give a nice output and control performance.",
+        "Please check the available options in this preset."
+      ],
+      "discussion": ": https://github.com/betaflight/firmware-presets/pull/141/",
+      "warning": "This preset changes PID loop rate to 3.2k. This is necessary for some BMI270 gyro boards. Please, don't change it back to anything higher than 4k unless you know what you are doing.",
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
     {
       "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
       "hash": "505a3cf9aff8fc6b861770d3bcafcb61431e2865f3fa10170f8c5cc044b5fea1",
@@ -688,6 +740,66 @@
       "discussion": "https://github.com/betaflight/firmware-presets/pull/51",
       "include_warning": [
         "misc/warnings/en/rpm_filters.txt"
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_normal.txt",
+      "hash": "4eb8ff59fbee66a6d98e60798430020bdef649560fca5f9db04dbd9be25adb56",
+      "options": [],
+      "title": "Normal Filters by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filters",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for normal noise builds.",
+        "",
+        "WARNING: Preset for 12 poles motors.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: Always check motors temperature when applying new filters.",
+        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoffs."
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_very_clean.txt",
+      "hash": "04167d3f579822d93adbaa925ca8e926b7f95a86a65713f5365ddfa94df98d8d",
+      "options": [],
+      "title": "No Gyro Lowpass Filters VERY CLEAN",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filters",
+        "clean",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for VERY CLEAN bulds.",
+        "",
+        "Credits to Chris Rosser for this filters setup.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
+        "Ensure that your props are in mint condition.",
+        "If motors get hot or make grind noise then choose a less aggressive filter startegy."
       ],
       "include": [
         "presets/4.3/filters/defaults.txt"
