@@ -35,14 +35,13 @@ set simplified_gyro_filter_multiplier = OFF
 # -- Gyro Static Notches (default)--
 
 # -- Gyro Dynamic Notches --
-set dyn_notch_count = 1
-set dyn_notch_q = 500
+set dyn_notch_count = 2
+set dyn_notch_q = 400
 set dyn_notch_min_hz = 125
 set dyn_notch_max_hz = 600
 
 # -- RPM filtering --
 set dshot_bidir = ON
-set rpm_filter_fade_range_hz = 50
 
 # -- Motor Poles --
 set motor_poles_count = 12
@@ -55,7 +54,7 @@ set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 0
 set dterm_lpf1_type = PT2
 
-# -- Dterm sliders OFF --
+# -- Dterm slider OFF --
 set simplified_dterm_filter_multiplier = OFF
 
 # -- Yaw lowpass (default) --

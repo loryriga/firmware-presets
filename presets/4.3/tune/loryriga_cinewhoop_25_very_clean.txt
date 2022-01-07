@@ -56,7 +56,7 @@ set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 0
 set dterm_lpf1_type = BIQUAD
 
-# -- Dterm sliders OFF --
+# -- Dterm slider OFF --
 set simplified_dterm_filter_multiplier = OFF
 
 # -- Yaw lowpass (default) --

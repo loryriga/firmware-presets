@@ -750,7 +750,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_normal.txt",
-      "hash": "41ba4b6a42dd32e01aba4370a45f3874f839f6d01a6dbcde629341ba93d43cde",
+      "hash": "d9db27fc8f899c88f2527794eaa94bfa1b37ef00528a1184a237c0fd7a5de0af",
       "options": [],
       "title": "Normal Filters by LoryRiga",
       "firmware_version": [
@@ -779,7 +779,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_tinywhoop.txt",
-      "hash": "abba7b422d2ee4071f5cc9304bcaf219d21ba206292919d698077f2915d8e0b0",
+      "hash": "67ba88128527377655b1d7f515762db962c689c5f51ac0006f1389972a588166",
       "options": [],
       "title": "Tinywhoop Filters by LoryRiga",
       "firmware_version": [
@@ -2488,7 +2488,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "1eb1aea0203c5fd51200a10d26f9fa3a0eade53f281b5db52158e28caae9fc17",
+      "hash": "76f63de371f26616040f72c53f0147d20488fe578c9f38f5e2e3b49932396919",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2658,7 +2658,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "a61bd7f5417de24b2eb62ec60e1006c88a980d4d1b42e60a03dc1e1607567fab",
+      "hash": "6a0dac094ac57e0a4515493d1bf9e1d07dc893633a3d759ce3c7b017a195cf89",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2780,7 +2780,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "9cb3f988fe5b1b57fb3d6f13d07b0506a81281afebc802eede02eff8ea034965",
+      "hash": "7b01bbe14978cb52591bd6e8cb743fadd80f276b2f104747b83566922a5e1c3e",
       "options": [
         {
           "name": "Dynamic Idle",
