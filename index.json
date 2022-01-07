@@ -750,7 +750,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_normal.txt",
-      "hash": "b0f5362aa2e46bc2d66374c82e6b12dcd36ffacdebdec48a2c2c2c8ba3ffcd7d",
+      "hash": "f300917fb36c94b6cf63fc91f8713a88b055a2f672bb9daa5685cab779bd1aaa",
       "options": [],
       "title": "Normal Filters by LoryRiga",
       "firmware_version": [
@@ -779,7 +779,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_tinywhoop.txt",
-      "hash": "fbe8164965ee2c2e085961dbb6c5a0c769691d3724de78d9cb49373500780c4b",
+      "hash": "abba7b422d2ee4071f5cc9304bcaf219d21ba206292919d698077f2915d8e0b0",
       "options": [],
       "title": "Tinywhoop Filters by LoryRiga",
       "firmware_version": [
@@ -809,7 +809,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_very_clean.txt",
-      "hash": "7324ca255a8fed64ffd52dda1dfb2d71285ce0c0d6a064f351e2bebabd22dc9b",
+      "hash": "04167d3f579822d93adbaa925ca8e926b7f95a86a65713f5365ddfa94df98d8d",
       "options": [],
       "title": "No Gyro Lowpass Filters VERY CLEAN",
       "firmware_version": [
@@ -2488,7 +2488,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "170e033da8efc5d7a07d0f7af80845762f808d829f3f7519db4184386bbd035a",
+      "hash": "fef961ec05717faea354fbe1bdca102e2eaefc1537511aa1551e45ad5725f6d1",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2658,7 +2658,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "144af9f3b9ba00444074969b7323f7585e85ba9783614ad0f32f49376da8d6c6",
+      "hash": "43e9f12be4bec7ceb1be2aedfd964935d4160284f7d0b67432f937ce676856af",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -2780,7 +2780,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "d54d6d9107d00bddbbfc2e9e1ba0a86e9668a121d5d0788b5a2b8b80b99c1fb7",
+      "hash": "db3dc7df2502b46311dae12eb2157aaf7c8ee286c75a5cfee30776ed46b54a37",
       "options": [
         {
           "name": "Dynamic Idle",

@@ -43,7 +43,7 @@ set dyn_notch_max_hz = 600
 
 # -- RPM filtering --
 set dshot_bidir = ON
-set rpm_filter_crossfading_range = 100
+set rpm_filter_fade_range_hz = 100
 
 # -- Motor Poles --
 set motor_poles_count = 12
