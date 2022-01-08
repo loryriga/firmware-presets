@@ -1,7 +1,7 @@
 #$ TITLE:  Normal Filters by LoryRiga
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: filters, rpm
 #$ AUTHOR: LoryRiga
 #$ DESCRIPTION: Filters for normal noise builds.
@@ -11,8 +11,7 @@
 #$ DESCRIPTION: WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: Always check motors temperature when applying new filters. 
-#$ DESCRIPTION: If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass cutoffs.
-
+#$ DESCRIPTION: If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass slider.
 
 
 #APPLYING DEAFULT FILTERS
@@ -29,8 +28,6 @@ set simplified_gyro_filter_multiplier = 110
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 150
-set dyn_notch_max_hz = 600
 
 # -- RPM filtering --
 set dshot_bidir = ON
