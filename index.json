@@ -170,7 +170,7 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_normal.txt",
-      "hash": "f43beefcd6d07ceca4140282bc54b2588a3abf419b6df0f5a6c73a6190b89dff",
+      "hash": "94360e6c0bb0cff10aec6c67c8f35c4400ed74e27a151aae3e62ae60f2f0846e",
       "options": [],
       "title": "Normal Filters by LoryRiga",
       "firmware_version": [
@@ -191,7 +191,7 @@
         "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
         "",
         "WARNING: Always check motors temperature when applying new filters.",
-        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass slider."
+        "If motors get hot or make grind noise, reduce the dTerm expo and/or the dTerm cuttoffs or lower the gyro lowpass slider."
       ],
       "include": [
         "presets/4.3/filters/defaults.txt"

@@ -11,7 +11,7 @@
 #$ DESCRIPTION: WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING: Always check motors temperature when applying new filters. 
-#$ DESCRIPTION: If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass slider.
+#$ DESCRIPTION: If motors get hot or make grind noise, reduce the dTerm expo and/or the dTerm cuttoffs or lower the gyro lowpass slider.
 
 
 #APPLYING DEAFULT FILTERS
@@ -21,7 +21,7 @@
 # -- Only a dynamic PT1 gyro lowpass --
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
-set simplified_gyro_filter_multiplier = 110
+set simplified_gyro_filter_multiplier = 120
 
 # -- Gyro Static Notches (default)--
 
@@ -35,7 +35,7 @@ set rpm_filter_fade_range_hz = 75
 
 # -- Dterm filtering --
 set dterm_lpf1_dyn_min_hz = 90
-set dterm_lpf1_dyn_max_hz = 120
+set dterm_lpf1_dyn_max_hz = 115
 set dterm_lpf1_dyn_expo = 7
 set dterm_lpf1_static_hz = 0
 set dterm_lpf2_static_hz = 0
