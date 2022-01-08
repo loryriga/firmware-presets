@@ -189,6 +189,66 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/filters/loryriga_normal.txt",
+      "hash": "0aab1d780745cbf7891a24f9082108affb8c1531ef681b2f1f7dd3b213f3d88d",
+      "options": [],
+      "title": "Normal Filters by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filters",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for normal noise builds.",
+        "",
+        "WARNING: Preset for 12 poles motors.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: Always check motors temperature when applying new filters.",
+        "If motors get hot or make grind noise, reduce the dTerm expo or lower the gyro lowpass slider."
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/filters/loryriga_very_clean.txt",
+      "hash": "907cfc0e8f303a226e9b6405da2de7db99420b6c0b2d21443dbd101fae3d00d9",
+      "options": [],
+      "title": "No Gyro Lowpass Filters VERY CLEAN",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filters",
+        "clean",
+        "rpm"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Filters for VERY CLEAN bulds.",
+        "",
+        "Credits to Chris Rosser for this filters setup.",
+        "",
+        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
+        "",
+        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
+        "Ensure that your props are in mint condition.",
+        "If motors get hot or make grind noise then choose a less aggressive filter startegy."
+      ],
+      "include": [
+        "presets/4.3/filters/defaults.txt"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/leds/defaults.txt",
       "hash": "c1dc1b69bd7b001253f05b56f3f6c3d60e93615c718f30a3b815846f445d1f6c",
       "options": [],
