@@ -170,14 +170,14 @@
     },
     {
       "fullPath": "presets/4.3/filters/loryriga_normal.txt",
-      "hash": "0aab1d780745cbf7891a24f9082108affb8c1531ef681b2f1f7dd3b213f3d88d",
+      "hash": "f43beefcd6d07ceca4140282bc54b2588a3abf419b6df0f5a6c73a6190b89dff",
       "options": [],
       "title": "Normal Filters by LoryRiga",
       "firmware_version": [
         "4.3"
       ],
       "category": "FILTERS",
-      "status": "COMMUNITY",
+      "status": "EXPERIMENTAL",
       "keywords": [
         "filters",
         "rpm"
