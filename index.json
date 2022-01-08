@@ -1395,6 +1395,59 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rates/loryriga_cinematic.txt",
+      "hash": "f7b81f88aa44e131c15af3cf2d23bb35102fde88f987a5f164ca3ee1f58c6579",
+      "options": [],
+      "title": "Cinematic Rates by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "freestyle",
+        "HD",
+        "cinematic",
+        "rates",
+        "smooth"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Cinematic rates by LoryRiga",
+        "TPA values are not included",
+        "Throttle limit and curve are not included"
+      ],
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rates/loryriga_freestyle.txt",
+      "hash": "a62b4013ed649aaf032050671f6b866cfe35c6955a395b986296f4eac91a5848",
+      "options": [],
+      "title": "Freestyle Rates by LoryRiga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "freestyle",
+        "HD",
+        "cinematic",
+        "rates"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "Freestyle rates by LoryRiga",
+        "TPA values are not included",
+        "Throttle limit and curve are not included"
+      ],
+      "include": [
+        "presets/4.3/rates/defaults.txt"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/rates/MinChan.txt",
       "hash": "2ec0aa7511e5642e28f82211380594a2efbf6e6e801942f1151d2fb5a9658c50",
       "options": [
