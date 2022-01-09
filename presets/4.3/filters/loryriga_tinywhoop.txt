@@ -19,13 +19,11 @@
 #DEAFULTS END. APPLYING CUSTOM FILTERS 
 
 # -- Only a static PT1 gyro lowpass --
-set gyro_lpf1_dyn_min_hz = o
+set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
-set gyro_lpf1_static_hz = 350
 set gyro_lpf2_static_hz = 0
-
-# -- Gyro Sliders OFF --
-set simplified_gyro_filter_multiplier = OFF
+set simplified_gyro_filter_multiplier = 70
+simplified_tuning apply
 
 # -- Gyro Static Notches (default)--
 
