@@ -38,8 +38,6 @@ set simplified_gyro_filter_multiplier = OFF
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 150
-set dyn_notch_max_hz = 600
 
 # -- RPM filtering --
 set dshot_bidir = ON
