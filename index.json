@@ -104,6 +104,7 @@
     "category": [
       "FILTERS",
       "RATES",
+      "RC_SMOOTHING",
       "TUNE"
     ],
     "author": [
@@ -118,13 +119,17 @@
       "clean",
       "default",
       "defaults",
+      "fast",
       "filter",
       "filters",
       "freestyle",
       "pid",
       "rates",
+      "rc smoothing",
+      "rc_smoothing",
       "reset",
       "rpm",
+      "smoothing",
       "tinywhoop",
       "tune"
     ]
@@ -205,6 +210,50 @@
       ]
     },
     {
+      "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
+      "hash": "a1c12a5b8fb6d7859f70e603144b74a570e664573b6f4455807d6c427cb35621",
+      "options": [],
+      "title": "Default 4.3 RC smoothing settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RC_SMOOTHING",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "rc smoothing",
+        "rc_smoothing"
+      ],
+      "author": "Betaflight",
+      "description": [
+        "Resets RC Smoothing settings to 4.3 defaults"
+      ]
+    },
+    {
+      "fullPath": "presets/4.3/rc_smoothing/loryriga_fast_freestyle.txt",
+      "hash": "3e84442105bafa472eaac005b13c7931c13b458916843a3dd4aaca2ffdbcece9",
+      "options": [],
+      "title": "Fast Freestyle Smoothing By Loryriga",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "RC_SMOOTHING",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "freestyle",
+        "smoothing",
+        "fast"
+      ],
+      "author": "LoryRiga",
+      "description": [
+        "RC Smoothing settings for fast freestyle flying."
+      ],
+      "include": [
+        "presets/4.3/rc_smoothing/defaults.txt"
+      ]
+    },
+    {
       "fullPath": "presets/4.3/tune/defaults.txt",
       "hash": "01aca6320dd03893dca8af4e246f156f2347a9dff618d23e7641f9e4590fdd53",
       "options": [],
@@ -232,7 +281,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop.txt",
-      "hash": "633203d5765fc8ab3240969c6645bf6c2997a00aee7f9a028244ca72573cf2ca",
+      "hash": "d795ef4e5ed9b0fe2182eeccb7b4bb055176761eea92cded1bb3c47ff0b1227c",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -291,7 +340,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_1s_65mm_tinywhoop_no_filters.txt",
-      "hash": "b5a45a149057ba6b92595490b0b2ccdb15caa2af3348247c40f5c3310ad5947e",
+      "hash": "8e5f58206acb8e777964b7347a6f26ef355d61d518b9f5e52d5241e0db6e37e2",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -343,7 +392,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
-      "hash": "96cc3723340868b3c09c5ab336e79ee706c0ec20d62f3cbdc389998450bc1f64",
+      "hash": "626de0542293ef0f22e398041332ac31f1ff14a3f6bd3d519fb607abf258fbae",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -402,7 +451,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "6378a646dadc43bad7d371f50bf8eefdfe5f7bbb575ce8f33814591b742453d4",
+      "hash": "995fcba5758a53aaf7a71c8cf493d81e5d41bb97a56d57879858aa13877f97ea",
       "options": [
         {
           "name": "Dynamic Idle",
@@ -470,7 +519,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_no_filters.txt",
-      "hash": "840a5fbb04c44748555918e7981b634072ee70e34bbccded59219e15a81fa176",
+      "hash": "01f9788ddb36a4191839f21829ee084c6851159688165f7fd9d2ea2164e50919",
       "options": [
         {
           "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
@@ -524,7 +573,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/loryriga_freestyle_5inch_very_clean.txt",
-      "hash": "f3f8369c9a33ae5fab93702f5b1031250da7ccf843eec9d5e6f5059271b1d8fb",
+      "hash": "e1ee2ff771af150a73b6233c09de67024eabf07582d81d1e53da0e36478ede52",
       "options": [
         {
           "name": "Dynamic Idle",

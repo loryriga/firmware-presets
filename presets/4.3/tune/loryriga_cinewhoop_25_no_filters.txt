@@ -71,7 +71,7 @@ set thrust_linear = 25
 #$ OPTION BEGIN (UNCHECKED): Feedforward for 200-250Hz RC Links
 # -- Feedforward  --
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 30
+set feedforward_smooth_factor = 35
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): F4 FC Speed Settings (WARNING: Enables DSHOT300)
