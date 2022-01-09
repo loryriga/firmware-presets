@@ -22,6 +22,7 @@
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
 set simplified_gyro_filter_multiplier = 120
+simplified_tuning apply
 
 # -- Gyro Static Notches (default)--
 
@@ -44,4 +45,5 @@ set dterm_lpf1_type = PT2
 # -- Dterm slider OFF --
 set simplified_dterm_filter_multiplier = OFF
 
-# -- Yaw lowpass (default) --
+# -- No yaw lowpass --
+set yaw_lowpass_hz = 0
