@@ -1,7 +1,7 @@
 #$ TITLE:  Normal Filters by LoryRiga
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: FILTERS
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: COMMUNITY
 #$ KEYWORDS: filters, rpm
 #$ AUTHOR: LoryRiga
 #$ DESCRIPTION: Filters for normal noise builds.
