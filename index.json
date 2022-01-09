@@ -113,16 +113,13 @@
       "VTX"
     ],
     "author": [
-      "Betaflight",
-      "LoryRiga"
+      "Betaflight"
     ],
     "keywords": [
       "actual",
       "adjustments",
       "aux",
       "basic",
-      "cinewhoop",
-      "clean",
       "clear",
       "default",
       "defaults",
@@ -139,7 +136,6 @@
       "rc_link",
       "rc_smoothing",
       "reset",
-      "rpm",
       "switch",
       "tune",
       "vtx",
@@ -166,35 +162,6 @@
       "author": "Betaflight",
       "description": [
         "Resets Filter settings to 4.3 defaults"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/filters/loryriga_normal.txt",
-      "hash": "599cb03b079fc787be5dad58735540a4e1869270e54cea4d943aa50ea1e8e748",
-      "options": [],
-      "title": "Normal Filters by LoryRiga",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "filters",
-        "rpm"
-      ],
-      "author": "LoryRiga",
-      "description": [
-        "Filters for normal noise builds.",
-        "",
-        "WARNING: Preset for 12 poles motors.",
-        "",
-        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
-        "",
-        "WARNING: Always check motors temperature when applying new filters.",
-        "If motors get hot or make grind noise, reduce the dTerm expo and/or the dTerm cuttoffs or lower the gyro lowpass slider."
-      ],
-      "include": [
-        "presets/4.3/filters/defaults.txt"
       ]
     },
     {
@@ -351,133 +318,6 @@
         "WARNING: Overwrites all settings mentioned below to defaults.  The User cannot retain their previous values.",
         "WARNING: Tune authors must explicitly set these values to something other than default, if needed for the tune.",
         "DOES NOT reset rates, filters, rc_smoothing, and many other parameters."
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_no_filters.txt",
-      "hash": "96cc3723340868b3c09c5ab336e79ee706c0ec20d62f3cbdc389998450bc1f64",
-      "options": [
-        {
-          "name": "Dynamic Idle (WARNING: Enables Bidirectional DSHOT)",
-          "checked": false
-        },
-        {
-          "name": "48/96kHz PWM (thrust_linear = 25)",
-          "checked": false
-        },
-        {
-          "name": "Feedforward for 200-250Hz RC Links",
-          "checked": false
-        },
-        {
-          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
-          "checked": false
-        },
-        {
-          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
-          "checked": false
-        },
-        {
-          "name": "14 Poles Motors",
-          "checked": false
-        },
-        {
-          "name": "With Naked HD Camera",
-          "checked": true
-        }
-      ],
-      "title": "Cinewhoop 2.5inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "cinewhoop",
-        "tune",
-        "pid"
-      ],
-      "author": "LoryRiga",
-      "description": [
-        "Tune for 2.5\" cinewhoops.",
-        "",
-        "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
-        "",
-        "WARNING: If Dynamic Idle is enabled then Dshot Telemetry must work properly!",
-        "",
-        "WARNING: Preset for 12 poles motors. If 14 poles motors are used please check the dedicated option."
-      ],
-      "include": [
-        "presets/4.3/tune/defaults.txt"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/tune/loryriga_cinewhoop_25_very_clean.txt",
-      "hash": "6a0dac094ac57e0a4515493d1bf9e1d07dc893633a3d759ce3c7b017a195cf89",
-      "options": [
-        {
-          "name": "Dynamic Idle",
-          "checked": false
-        },
-        {
-          "name": "48/96kHz PWM (thrust_linear = 25)",
-          "checked": false
-        },
-        {
-          "name": "Feedforward for 200-250Hz RC Links",
-          "checked": false
-        },
-        {
-          "name": "F4 FC Speed Settings (WARNING: Enables DSHOT300)",
-          "checked": false
-        },
-        {
-          "name": "F7 FC Speed Settings (WARNING: Enables DSHOT600)",
-          "checked": false
-        },
-        {
-          "name": "14 Poles Motors",
-          "checked": false
-        },
-        {
-          "name": "With Naked HD Camera",
-          "checked": true
-        }
-      ],
-      "title": "Cinewhoop 2.5inch VERY CLEAN",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "filters",
-        "clean",
-        "cinewhoop",
-        "tune",
-        "pid",
-        "rpm"
-      ],
-      "author": "LoryRiga",
-      "description": [
-        "Tune with filters for VERY CLEAN 2.5\" cinewhoops.",
-        "Credits to Chris Rosser for the filter startegy used in this tune.",
-        "",
-        "Raise the master slider to improve the performance if needed.",
-        "Lower the master slider if you hear motors thrill, then raise the feedforward to the previous values with the dedicated slider.",
-        "",
-        "WARNING: RPM filter is required. Ensure that DShot Telemetry is working properly!",
-        "",
-        "WARNING: This setup have very little filtering and it's intended to be used only on well built quads with a sturdy frame and smooth motors.",
-        "Ensure that your props are in mint condition.",
-        "If motors get hot or make grind noise then choose a less aggressive filter startegy.",
-        "",
-        "WARNING: Preset for 12 poles motors. If 14 poles motors are used please check the dedicated option."
-      ],
-      "include": [
-        "presets/4.3/tune/defaults.txt",
-        "presets/4.3/filters/defaults.txt"
       ]
     },
     {
