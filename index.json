@@ -103,14 +103,8 @@
     ],
     "category": [
       "FILTERS",
-      "LEDS",
-      "MODES",
-      "OSD",
       "RATES",
-      "RC_LINK",
-      "RC_SMOOTHING",
-      "TUNE",
-      "VTX"
+      "TUNE"
     ],
     "author": [
       "Betaflight",
@@ -119,33 +113,20 @@
     "keywords": [
       "1s",
       "actual",
-      "adjustments",
-      "aux",
       "basic",
       "cinewhoop",
       "clean",
-      "clear",
       "default",
       "defaults",
       "filter",
       "filters",
       "freestyle",
-      "leds",
-      "mode",
-      "modes",
-      "OSD",
       "pid",
       "rates",
-      "rc link",
-      "rc smoothing",
-      "rc_link",
-      "rc_smoothing",
       "reset",
       "rpm",
-      "switch",
       "tinywhoop",
-      "tune",
-      "vtx"
+      "tune"
     ]
   },
   "presets": [
@@ -201,71 +182,6 @@
       ]
     },
     {
-      "fullPath": "presets/4.3/leds/defaults.txt",
-      "hash": "c1dc1b69bd7b001253f05b56f3f6c3d60e93615c718f30a3b815846f445d1f6c",
-      "options": [],
-      "title": "Default 4.3 LED settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "LEDS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "leds"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets LED settings to 4.3 defaults",
-        "Options: LED, colour or mode_color resets."
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/modes/defaults.txt",
-      "hash": "16a19e27a46efcd9f86d56f17e8fe82356921399cc0c5502e257e33ef8c321c3",
-      "options": [],
-      "title": "Default 4.3 Modes and Adjustment settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "MODES",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "mode",
-        "modes",
-        "adjustments",
-        "aux",
-        "switch"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets modes and adjustment ranges to 4.3 defaults"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/osd/defaults.txt",
-      "hash": "36eb8ae097d0362030b297477c971280aad5562ac512a3f7ffa91949ed56db82",
-      "options": [],
-      "title": "Default 4.3 OSD settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "OSD",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "OSD"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets the OSD values back to Betaflight 4.3 defaults"
-      ]
-    },
-    {
       "fullPath": "presets/4.3/rates/defaults.txt",
       "hash": "968bc57fcba5bba104bddbb2f22892c503b95eabcf87b7b747d7c0ad32cbfa0b",
       "options": [],
@@ -286,48 +202,6 @@
         "Will be applied for the currently selected rate profile",
         "TPA values are not included",
         "Throttle limit and curve are not included"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/rc_link/defaults.txt",
-      "hash": "44965114019d72a94d515080ffbe70f9e5c10c7713cef04db1d81a4df4014d16",
-      "options": [],
-      "title": "Default 4.3 RC link settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_LINK",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc link",
-        "rc_link"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets all RC Link related parameters to 4.3 defaults"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/rc_smoothing/defaults.txt",
-      "hash": "a1c12a5b8fb6d7859f70e603144b74a570e664573b6f4455807d6c427cb35621",
-      "options": [],
-      "title": "Default 4.3 RC smoothing settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "RC_SMOOTHING",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "rc smoothing",
-        "rc_smoothing"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets RC Smoothing settings to 4.3 defaults"
       ]
     },
     {
@@ -709,28 +583,6 @@
       "include": [
         "presets/4.3/tune/defaults.txt",
         "presets/4.3/filters/defaults.txt"
-      ]
-    },
-    {
-      "fullPath": "presets/4.3/vtx/defaults.txt",
-      "hash": "f771542d93f15f993d39d97f9004ede104ba7dfebff45f68863aa25f30275388",
-      "options": [],
-      "title": "Default 4.3 VTX settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "VTX",
-      "status": "OFFICIAL",
-      "keywords": [
-        "defaults",
-        "reset",
-        "clear",
-        "vtx"
-      ],
-      "author": "Betaflight",
-      "description": [
-        "Resets VTx settings and table back to 4.3 Defaults",
-        "Only the checked settings will be reset"
       ]
     }
   ]
